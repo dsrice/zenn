@@ -3,7 +3,7 @@ title: "Swagger-mergerを使ってみた"
 emoji: "🕌"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["OpenAPI","Swagger", Redoc]
-published: false
+published: true
 ---
 
 ## 概要
@@ -108,7 +108,7 @@ http://localhost:8082
 起動していない場合は、起動時にもマージ処理が実行されますので、
 追加の修正などは必要ありません。
 
-#### 統括
+## 統括
 ファイル分割で利便性は向上したが、
 マージファイルでないとエディターのプレビュー機能での表示確認はできなかった。
 一人で管理する分ではどちらでもいいかもしれないが大きいファイルは
