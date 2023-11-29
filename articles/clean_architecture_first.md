@@ -2,7 +2,7 @@
 title: "クリーンアーキテクチャについて考える"
 emoji: "🕌"
 type: "tech" # tech: 技術記事 / idea: アイデア
-topics: ["Clean Architecture","Architecture"]
+topics: ["CleanArchitecture","Architecture"]
 published: false
 ---
 
