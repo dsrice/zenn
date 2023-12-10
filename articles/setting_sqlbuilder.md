@@ -227,16 +227,16 @@ Expressionsとして不等号などの表現を用意する。
 - Npm(A, B)
   - A NOT LIKE 'B%' となる
   - 前方一致するための%はSQL発行時に補填する
-- Bm(A, B)
+- Sm(A, B)
   - A LIKE '%B'　となる
   - 後方一致するための%はSQL発行時に補填する
-- Nbm(A, B)
+- Nsm(A, B)
   - A NOT LIKE '%B'　となる
   - 後方一致するための%はSQL発行時に補填する
-- Pbm(A, B)
+- Psm(A, B)
   - A LIKE '%B%'　となる
   - 必要な％はSQL発行時に補填する
-- Npbm(A, B)
+- Npsm(A, B)
   - A NOT LIKE '%B%'　となる
   - 必要な％はSQL発行時に補填する
 - Between(A, B , C)
