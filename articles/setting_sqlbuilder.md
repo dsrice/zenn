@@ -8,9 +8,10 @@ published: false
 
 # 目的
 GolangのSQLBuilerを作ってみたくて、仕様を考える。
+今回はSELECT文の仕様を考えるが、サブクエリまで考えると複雑になるので
+一旦保留にする
 
 # 目指す形
-Tableに対応したモデルはsqlxに準拠した形とする。
 ここではusersというTableに対応したUserというTableモデル構造体がある場合とする。
 宣言としては、
 ```
@@ -101,9 +102,8 @@ pk.Select(
     "tokens.token",
   )
   .From(pk.Table("users"))
-  .Join(
-    pk.Inner(pk.Table("tokens")).ON(pk.Eq("tokens.user_id", "users.id"))
-  )
+  .InnerJoin(pk.Table("tokens"), pk.Eq("tokens.user_id", "users.id"))
+  
 
 /*
   SELECT 
@@ -128,9 +128,7 @@ pk.Select(
     t.Col("token")
   )
   .From(u)
-  .Join(
-    pk.Inner(t).ON(k.Eq(t.Col("user_id"), u.Col("id")))
-  )
+  .InnerJoin(t, k.Eq(t.Col("user_id"), u.Col("id")))
 
 /*
   SELECT 
@@ -157,9 +155,7 @@ pk.Select(
     t.Col("token")
   )
   .From(u)
-  .Join(
-    pk.Inner(t).ON(k.Eq(t.Col("user_id"), u.Col("id")))
-  )
+  .InnerJoin(t, k.Eq(t.Col("user_id"), u.Col("id")))
 
 /*
   SELECT 
@@ -179,15 +175,15 @@ pk.Select(
 
 SQLのJoinの種類に応じて
 - INNER JOIN
-  - Inner()
+  - InnerJoin()
 - LEFT (OUTER) JOIN
-  - Left()
+  - LeftJoin()
 - RIGHT (OUTER) JOIN
-  - Right()
+  - RightJoin()
 - FULL (OUTER) JOIN
-  - Full()
+  - FullJoin()
 - CROSS JOIN
-  - Cross()
+  - CrossJoin()
   - CROSS JOINは結合条件が不要なので設定できないようにする。
 
 で用意する。
