@@ -1,6 +1,6 @@
 ---
 title: "SQLBuilderの仕様を考える　目標設定編"
-emoji: "🕌"
+emoji: ""
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["Go","SQLBuilder", "OSS"]
 published: false

@@ -1,6 +1,6 @@
 ---
 title: "SQLBuilderの仕様を考える　SELECT仕様検討編"
-emoji: "🕌"
+emoji: ""
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["Go","SQLBuilder", "OSS"]
 published: false
