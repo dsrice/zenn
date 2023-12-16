@@ -8,7 +8,7 @@ published: false
 
 # 目的
 GolangのSQLBuilerを作ってみたくて、仕様を考える。
-最終系をみつつ、Version1にするゴールを考える
+最終系をみつつ、Version0.1にするゴールを考える
 
 # なんでやってみたいのか
 GolangにもSQLBuilderはあるが、unionに対応していないことが多い。（もしかしたらやり方を知らないだけかも）
@@ -42,6 +42,7 @@ Select文では主要な機能をあげると
 - Limit
 - Offset
 - Distinct
+  - 思ったよりやばかったのでVersion1では見送り
 - Group By
 - Having
 - Join
