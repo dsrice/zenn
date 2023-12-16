@@ -1,5 +1,5 @@
 ---
-title: "SQLBuilderの仕様を考える　INSERT仕様検討編"
+title: "SQLBuilderの仕様を考える　UPDATE仕様検討編"
 emoji: "🖋"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["Go","SQLBuilder", "OSS"]
