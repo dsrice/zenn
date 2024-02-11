@@ -333,7 +333,7 @@ Group byの利用は以下を想定している。
 ```go
 pk.Select("name")
   .From(pk.Table("users")).
-  Group("name")
+  GroupBy("name")
 
 // SELECT name FROM users GROUP BY name
 ```
@@ -343,7 +343,7 @@ pk.Select("name")
 ```go
 pk.Select("id", "name")
   .From(pk.Table("users")).
-  Group("name", "id")
+  GroupBy("name", "id")
 
 // SELECT id, name FROM users GROUP BY name, id
 ```
@@ -361,7 +361,7 @@ pk.Select(
   )
   .From(u)
   .InnerJoin(t, k.Eq(t.Col("user_id"), u.Col("id")))
-  .Group(u.Col("name"), t.Col("token"))
+  .GroupBy(u.Col("name"), t.Col("token"))
 
 /*
   SELECT 
