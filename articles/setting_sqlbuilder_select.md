@@ -8,7 +8,7 @@ published: false
 
 ## 目的
 
-GolangのSQLBuilerを作ってみたくて、仕様を考える。
+GolangのSQLBuilderを作ってみたくて、仕様を考える。
 今回はSELECT文の仕様を考えるが、サブクエリまで考えると複雑になるので
 一旦保留にする
 
@@ -316,7 +316,7 @@ pk.Select()
 ### Offset
 
 Offsetの利用は以下を想定している。
-Offsetrのデフォルト数値は設けなず、指定を必須とする。
+Offsetのデフォルト数値は設けず、指定を必須とする。
 
 ```go
 pk.Select()
