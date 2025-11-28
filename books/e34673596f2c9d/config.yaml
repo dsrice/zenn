@@ -1,0 +1,10 @@
+title: "認証と認可"
+summary: "SAML認証って必要なのか"
+topics: []
+published: false
+price: 0 # 有料の場合200〜5000
+# 本に含めるチャプターを順番に並べましょう
+chapters:
+  - chapter01
+  - chapter02
+  - example2
