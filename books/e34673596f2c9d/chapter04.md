@@ -17,7 +17,7 @@ HHTP/1.0に仕様（RFC1945、1996年）で標準化された認証方式で各�
 
 ベーシック認証はログイン画面が不要の代わりに上記のキャプチャの認証ダイヤログが表示されます。このダイヤログのUIを変更することや認証フローを変更することが難しくなっています。
 
-### 認証フロー
+## 認証フロー
 
 簡単ですが認証フローは以下のようになります。
 
@@ -40,14 +40,14 @@ HHTP/1.0に仕様（RFC1945、1996年）で標準化された認証方式で各�
     |                              |
 ```
 
-#### Step1：初回アクセス
+### Step1：初回アクセス
 
 ``` http
 GET /protected/resource HTTP/1.1
 Host: example.com
 ```
 
-#### Step2：サーバーが認証を要求
+### Step2：サーバーが認証を要求
 
 ``` http
 HTTP/1.1 401 Unauthorized
@@ -58,7 +58,7 @@ WWW-Authenticate: Basic realm="Restricted Area"
 - `WWW-Authenticate: Basic`: ベーシック認証を要求
 - `realm`: 保護領域の名前（ブラウザに表示される）
 
-#### ステップ3: クライアントが認証情報を送信
+### ステップ3: クライアントが認証情報を送信
 
 クライアント側の処理：
 
@@ -82,7 +82,7 @@ Host: example.com
 Authorization: Basic dXNlcjpwYXNzMTIz
 ```
 
-#### ステップ4: サーバーが認証情報を検証
+### ステップ4: サーバーが認証情報を検証
 
 サーバー側の処理：
 
@@ -120,7 +120,7 @@ HTTP/1.1 401 Unauthorized
 WWW-Authenticate: Basic realm="Restricted Area"
 ```
 
-### 問題点
+## 問題点
 
 問題点は、Base64で暗号化されている点です。
 Base64はだれでもデコードすることが可能のため暗号化されているわけではありません。
