@@ -1,0 +1,73 @@
+第3章：SAMLの基礎とアーキテクチャ（15ページ）
+
+SAMLが解決する課題
+IdPとSPの役割分担
+OAuth 2.0 / OpenID Connectとの比較表
+エンタープライズSSOのユースケース
+
+第4章：SAML規格の詳細解説（25-30ページ） ⭐重点
+
+Assertions（アサーション）の構造
+
+Authentication Statement
+Attribute Statement
+Authorization Decision Statement
+XML署名とセキュリティ
+
+
+Protocols（プロトコル）
+
+AuthnRequest
+Response
+LogoutRequest/Response
+
+
+Bindings（バインディング）
+
+HTTP Redirect Binding
+HTTP POST Binding
+SOAP Binding
+バインディングの使い分け
+
+
+Profiles（プロファイル）
+
+Web Browser SSO Profile
+Single Logout Profile
+
+
+メタデータ仕様
+
+EntityDescriptor
+IDPSSODescriptor / SPSSODescriptor
+証明書の管理
+
+
+
+第5章：SAML認証フローの実践（25-30ページ） ⭐重点
+
+SP-initiated フロー
+
+詳細なシーケンス図
+各ステップでのHTTPリクエスト/レスポンス
+RedirectバインディングでのURL構築
+POSTバインディングでのHTML Form
+
+
+IdP-initiated フロー
+
+シーケンス図
+セキュリティ上の考慮事項
+
+
+Single Logout（SLO）
+
+フロー詳細
+実装時の課題
+
+
+セキュリティ検証
+
+署名検証のプロセス
+リプレイ攻撃対策
+タイムスタンプとアサーションの有効期限
